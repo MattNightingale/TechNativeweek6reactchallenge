@@ -2,3 +2,35 @@
   background: #f90;
   width: 100%;
 }
+
+
+.buttons {
+  margin-left: 10%;
+}
+
+.tab__button {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: beige;
+}
+
+.active{
+  border-bottom: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: beige;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+  background-color: beige;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 20px;
+}

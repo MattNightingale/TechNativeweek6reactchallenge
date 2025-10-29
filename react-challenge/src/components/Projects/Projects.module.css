@@ -1,0 +1,34 @@
+.wrapper {
+  padding: 1rem;
+  border: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: grey;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+.project__link {
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.project__image {
+    width: 100%;
+}
+
+.project__description {
+    width: 50%;
+    margin: 1rem;
+
+}

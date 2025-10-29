@@ -1,7 +1,7 @@
 import styles from "./ReactDemoPage.module.css";
 import { useState } from "react";
 import ReactDemo1 from "../ReactDemo/ReactDemo1";
-import ReactDemo2 from "../ReactDemo/ReactDemo2";
+import ReactDemo2 from "../ReactDemo/ReactDemo2/ReactDemo2";
 import ReactDemo3 from "../ReactDemo/ReactDemo3";
 import ReactDemo4 from "../ReactDemo/ReactDemo4";
 import ReactDemo5 from "../ReactDemo/ReactDemo5";
@@ -25,11 +25,36 @@ function Projects() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.buttons}>
-        <button onClick={() => clickHandler("ReactDemo1")}>ReactDemo 1</button>
-        <button onClick={() => clickHandler("ReactDemo2")}>ReactDemo 2</button>
-        <button onClick={() => clickHandler("ReactDemo3")}>ReactDemo 3</button>
-        <button onClick={() => clickHandler("ReactDemo4")}>ReactDemo 4</button>
-        <button onClick={() => clickHandler("ReactDemo5")}>ReactDemo 5</button>
+        <button
+          className={styles.tab__button}
+          onClick={() => clickHandler("ReactDemo1")}
+        >
+          UseEffect Counter
+        </button>
+        <button
+          className={styles.tab__button}
+          onClick={() => clickHandler("ReactDemo2")}
+        >
+          API demo
+        </button>
+        <button
+          className={styles.tab__button}
+          onClick={() => clickHandler("ReactDemo3")}
+        >
+          ReactDemo 3
+        </button>
+        <button
+          className={styles.tab__button}
+          onClick={() => clickHandler("ReactDemo4")}
+        >
+          ReactDemo 4
+        </button>
+        <button
+          className={styles.tab__button}
+          onClick={() => clickHandler("ReactDemo5")}
+        >
+          ReactDemo 5
+        </button>
       </div>
       <div className={styles.content}>{demo}</div>
     </div>
