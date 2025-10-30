@@ -33,7 +33,7 @@ function Project3() {
           href="https://asquared-tech-test.vercel.app/"
         >
           <img
-            src="/src/assets/images/fetchmeadrink.png"
+            src="/images/fetchmeadrink.png"
             className={styles.project__image}
             alt="fetch me a drink"
           />

@@ -46,7 +46,7 @@ function Project4() {
           href="https://jammming-c8ly5llgh-mattnightingales-projects.vercel.app/"
         >
           <img
-            src="/src/assets/images/jammin.png"
+            src="/images/jammin.png"
             className={styles.project__image}
             alt="jammin"
           />
