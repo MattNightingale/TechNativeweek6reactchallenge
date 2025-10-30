@@ -10,6 +10,7 @@ function ReactDemo1() {
 
   return (
     <div className={styles.wrapper}>
+      <h3 className={styles.demo__header}>A simple timer made with useEffect</h3>
       <p>{count} seconds have passed since you clicked this tab</p>
     </div>
   );

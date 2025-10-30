@@ -4,6 +4,7 @@ import cocktailDB from "./api";
 import Drinks from "./Drinks";
 import SearchBar from "./SearchBar";
 import Loading from "./Loading";
+import SearchResults from "./SearchResults";
 
 function ReactDemo2() {
   const [searchResults, setSearchResults] = useState([]);
@@ -11,7 +12,8 @@ function ReactDemo2() {
   const [loading, setLoading] = useState("true");
 
   async function search(term) {
-    await cocktailDB.search(term).then((result) => setDrinks(result));
+    await cocktailDB.search(term).then((result) => setSearchResults(result));
+    console.log(searchResults);
   }
 
   useEffect(() => {
@@ -41,23 +43,34 @@ function ReactDemo2() {
   }
 
   if (loading) {
-    <SearchBar search={search} />;
-    return <Loading />;
-  } if(!loading) {
     return (
       <div className={styles.wrapper}>
+        <h3 className={styles.demo__header}>Displaying API data with React</h3>
+        <SearchBar onSearch={search} />
+        <Loading />
+      </div>
+    );
+  }
+  if (searchResults.length > 0) {
+    return (
+      <div className={styles.wrapper}>
+        <h3 className={styles.demo__header}>Displaying API data with React</h3>
+        <SearchBar onSearch={search} />
+        <SearchResults searchResults={searchResults} />
+      </div>
+    );
+  }
+
+  else {
+    return (
+      <div className={styles.wrapper}>
+        <h3 className={styles.demo__header}>Displaying API data with React</h3>
         <SearchBar onSearch={search} />
         <Drinks drinks={drinks} />
       </div>
     );
-  } if (searchResults) {
-    return (
-      <div className={styles.wrapper}>
-        <SearchBar onSearch={search} />
-        <Drinks drinks={drinks} />
-      </div>
-    );
-}
+  } 
+  
 }
 
 export default ReactDemo2;

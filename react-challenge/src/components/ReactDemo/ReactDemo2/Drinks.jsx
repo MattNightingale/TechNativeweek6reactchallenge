@@ -1,12 +1,14 @@
+import styles from '../ReactDemo.module.css';
+
 function Drinks({ drinks }) {
   return (
-    <div className="drinks__wrapper">
+    <div className={styles.wrapper}>
       {drinks.map((drink) => {
         return (
-          <div className="tile" key={drink[0].id}>
-            <li className="item">
-              <h2 className="caption">{drink[0].name}</h2>
-              <img className="thumbNail" src={drink[0].image} />
+          <div key={drink[0].id} className={styles.tile}>
+            <li className={styles.item}>
+              <h2 className={styles.caption}>{drink[0].name}</h2>
+              <img className={styles.image} src={drink[0].image} />
             </li>
           </div>
         );

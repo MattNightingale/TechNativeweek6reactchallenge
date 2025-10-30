@@ -1,3 +1,5 @@
+import styles from '../ReactDemo.module.css';
+
 import { useState } from "react";
 
 function SearchBar(props) {
@@ -5,6 +7,7 @@ function SearchBar(props) {
 
   function handleTermChange({ target }) {
     setTerm(target.value);
+    newSearch();
   };
 
   function handleClear() {
@@ -22,14 +25,13 @@ function SearchBar(props) {
   function newSearch(e) {
     if (term) {
       props.onSearch(term);
-      handleClear();
       e.preventDefault();
     }
   };
 
 
   return (
-    <div className='searchbar'>
+    <div className={styles.searchBar}>
       <input
         placeholder="Search for a cocktail"
         onChange={handleTermChange}
@@ -37,8 +39,9 @@ function SearchBar(props) {
         required
         value={term}
         id="input"
+        className={styles.searchInput}
       />
-      <button id='button' type="button" className="search" onClick={newSearch} >
+      <button id='button' type="button" className={styles.searchButton} onClick={newSearch} >
         SEARCH
       </button>
     </div>

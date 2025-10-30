@@ -5,4 +5,9 @@
   justify-content: center;
   width: 100%;
   flex: 1;
+  background: #f90;
+}
+
+.wrapper.dark {
+  background-color: rgb(0, 0, 92);;
 }

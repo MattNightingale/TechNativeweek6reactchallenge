@@ -1,10 +1,11 @@
 .wrapper {
-  background: #f90;
+  background: transparent;
   width: 100%;
 }
 
 
 .buttons {
+  margin-top: 20px;
   margin-left: 10%;
 }
 
@@ -12,10 +13,19 @@
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   background-color: beige;
+  cursor: pointer;
+  padding: 10px;
+  font-weight: bold;
+  border: 2px solid black;
 }
 
-.active{
-  border-bottom: none;
+.tab__button:hover {
+  text-decoration: underline;
+}
+
+
+.tab__button.active{
+  border-bottom: 2px solid beige;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   background-color: beige;
@@ -27,10 +37,11 @@
   margin: 0 auto;
   width: 80%;
   background-color: beige;
-  border: 1px solid #ccc;
+  border: 2px solid black;
   border-top: none;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
   padding: 20px;
+  margin-bottom: 20px;
 }

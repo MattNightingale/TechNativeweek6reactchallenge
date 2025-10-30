@@ -1,24 +1,105 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  min-height: 300px;
+}
+
+.content {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.demo__header {
+  width: 80%;
+  text-align: center;
+}
+
 .loader {
-    width: 60px;
-    aspect-ratio: 4;
-    background: radial-gradient(circle closest-side,rgb(62, 158, 255) 90%,#0000) 0/calc(100%/3) 100% space;
-    clip-path: inset(0 100% 0 0);
-    animation: l1 1s steps(4) infinite;
-    margin-left: 20%;
-    margin-top: 10%;
+  width: 60px;
+  aspect-ratio: 4;
+  background: radial-gradient(circle closest-side, rgb(62, 158, 255) 90%, #0000)
+    0 / calc(100% / 3) 100% space;
+  clip-path: inset(0 100% 0 0);
+  animation: l1 1s steps(4) infinite;
+  margin-left: 20%;
+  margin-top: 10%;
+}
+
+@keyframes l1 {
+  to {
+    clip-path: inset(0 -34% 0 0);
   }
+}
 
-  @keyframes l1 {to{clip-path: inset(0 -34% 0 0)}}
-
-  .loadingScreen {
-    display: inline-flex;
-    justify-content: center;
+.loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
     width: 100%;
-    padding-top: 20%;
-  }
+}
 
-  .loadingScreen h1 {
-    color: rgb(62, 158, 255);
-    font-size: 2rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
+.loadingScreen {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 20%;
+}
+
+.loadingScreen h1 {
+  color: rgb(62, 158, 255);
+  font-size: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0 auto;
+}
+
+.tile {
+  margin: 10px;
+  width: 30%;
+}
+
+.item {
+  list-style: none;
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid rgb(62, 158, 255);
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f8ff;
+  text-align: center;
+}
+
+.image {
+  width: 80%;
+  border-radius: 10px;
+}
+
+
+
+.lightswitch {
+  max-width: 200px;
+  object-fit: cover;
+  cursor: pointer;
+}
+

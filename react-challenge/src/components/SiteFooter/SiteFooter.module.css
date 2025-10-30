@@ -1,9 +1,19 @@
-.wrapper {
+.wrapper.dark {
   padding: 1rem;
   border: 1px solid lightgray;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  background: grey;
+  background: darkslategray;
+}
+
+.wrapper.light {
+  padding: 1rem;
+  border: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background: rgb(99, 181, 253);
 }

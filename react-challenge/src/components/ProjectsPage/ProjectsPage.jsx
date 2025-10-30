@@ -1,5 +1,5 @@
 import styles from "./ProjectsPage.module.css";
-import { useState } from "react";
+import { act, useState } from "react";
 import Project1 from "../Projects/Project1";
 import Project2 from "../Projects/Project2";
 import Project3 from "../Projects/Project3";
@@ -8,63 +8,64 @@ import Project5 from "../Projects/Project5";
 
 function Projects() {
   const [project, setProject] = useState(<Project1 />);
-  const [tabButton, setTabButton] = useState(" ");
+  const [activeTabButton, setActiveTabButton] = useState("button1");
   
 
   function clickHandler(event) {
     if (event === "Project1") {
       setProject(<Project1 />);
-      setTabButton("active")
+      setActiveTabButton("button1")
     } else if (event === "Project2") {
       setProject(<Project2 />);
-      setTabButton("active");
+      setActiveTabButton("button2");
      
     } else if (event === "Project3") {
       setProject(<Project3 />);
-      setTabButton("active");
+      setActiveTabButton("button3");
       
     } else if (event === "Project4") {
       setProject(<Project4 />);
-      setTabButton("active");
+      setActiveTabButton("button4");
      
     } else if (event === "Project5") {
       setProject(<Project5 />);
-      setTabButton("active");
+      setActiveTabButton("button5");
       
     }
   }
   return (
     <div className={styles.wrapper}>
-      <div className={styles.buttons}>
+      <div className={styles.buttons}> 
         <button
-          className={styles.tab__button}
+          className={activeTabButton === "button1" ? styles.tab__button + ' ' + styles.active : styles.tab__button}
           onClick={() => clickHandler("Project1")}
+          id="button1"
         >
-          Project 1
+          Adventure Generator
         </button>
         <button
-          className={styles.tab__button}
+          className={activeTabButton === "button2" ? styles.tab__button + ' ' + styles.active : styles.tab__button}
           onClick={() => clickHandler("Project2")}
         >
-          Project 2
+          Ask Beatz
         </button>
         <button
-          className={styles.tab__button}
+          className={activeTabButton === "button3" ? styles.tab__button + ' ' + styles.active : styles.tab__button}
           onClick={() => clickHandler("Project3")}
         >
-          Project 3
+          Fetch Me a Drink
         </button>
         <button
-          className={styles.tab__button}
+          className={activeTabButton === "button4" ? styles.tab__button + ' ' + styles.active : styles.tab__button}
           onClick={() => clickHandler("Project4")}
         >
-          Project 4
+          Jammmin'
         </button>
         <button
-          className={styles.tab__button}
+          className={activeTabButton === "button5" ? styles.tab__button + ' ' + styles.active : styles.tab__button}
           onClick={() => clickHandler("Project5")}
         >
-          Project 5
+          RecAPI
         </button>
       </div>
       <div className={styles.content}>{project}</div>
