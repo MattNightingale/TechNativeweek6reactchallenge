@@ -3,7 +3,7 @@ import { useState } from "react";
 import ReactDemo1 from "../ReactDemo/ReactDemo1";
 import ReactDemo2 from "../ReactDemo/ReactDemo2/ReactDemo2";
 import ReactDemo3 from "../ReactDemo/ReactDemo3/ReactDemo3";
-import ReactDemo4 from "../ReactDemo/ReactDemo4";
+import ReactDemo4 from "../ReactDemo/ReactDemo4/ReactDemo4";
 import ReactDemo5 from "../ReactDemo/ReactDemo5";
 
 function Projects() {
@@ -50,13 +50,13 @@ function Projects() {
         >
           API demo
         </button>
-      {/*  <button
+      <button
           className={activeTabButton === "button4" ? styles.tab__button + ' ' + styles.active : styles.tab__button}
           onClick={() => clickHandler("ReactDemo4")}
         >
           ReactDemo 4
         </button>
-        <button
+        {/*  <button
           className={activeTabButton === "button5" ? styles.tab__button + ' ' + styles.active : styles.tab__button}
           onClick={() => clickHandler("ReactDemo5")}
         >

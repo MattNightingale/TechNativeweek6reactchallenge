@@ -9,6 +9,7 @@ function Drinks({ drinks }) {
             <li className={styles.item}>
               <h2 className={styles.caption}>{drink[0].name}</h2>
               <img className={styles.image} src={drink[0].image} />
+              <img className={styles.favorite} src="/images/favheart.png" />
             </li>
           </div>
         );

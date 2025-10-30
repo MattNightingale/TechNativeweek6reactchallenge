@@ -114,9 +114,17 @@
 .image {
   width: 80%;
   border-radius: 10px;
+  padding-bottom: 10px;
 }
 
-
+.favorite {
+  width: 30px;
+  position: relative;
+  top: 0px;
+  left: 125px;
+  filter: grayscale(100%);
+  cursor: pointer;
+}
 
 .lightswitch {
   max-width: 200px;
