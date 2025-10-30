@@ -49,7 +49,7 @@ function Projects() {
         >
           useContext
         </button>
-        <button
+      {/*  <button
           className={activeTabButton === "button4" ? styles.tab__button + ' ' + styles.active : styles.tab__button}
           onClick={() => clickHandler("ReactDemo4")}
         >
@@ -60,7 +60,7 @@ function Projects() {
           onClick={() => clickHandler("ReactDemo5")}
         >
           ReactDemo 5
-        </button>
+        </button> */}
       </div>
       <div className={styles.content}>{demo}</div>
     </div>

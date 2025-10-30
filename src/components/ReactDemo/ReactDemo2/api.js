@@ -8,7 +8,7 @@ const cocktailDB = {
     const response = await fetch(url);
         const jsonResponse = await response.json();
         if (!jsonResponse) {
-            console.error("Response Error!");
+            alert("Failed to fetch data");
         }
         const data = await jsonResponse.drinks.map((d) => ({
             id: d.idDrink,
@@ -26,7 +26,7 @@ const cocktailDB = {
     const response = await fetch(url);
     const jsonResponse = await response.json();
     if (!jsonResponse) {
-        console.error("Response Error!");
+        alert("Failed to fetch data");
     };
     const data = await jsonResponse.drinks.map((d) => ({
         id: d.idDrink,
