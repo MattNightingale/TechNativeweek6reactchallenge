@@ -4,7 +4,7 @@ import styles from "./SiteNav.module.css";
 function SiteNav() {
   const navLinks = [
     { label: "Home", url: "/" },
-    { label: "Contact", url: "/contact" },
+    //{ label: "Contact", url: "/contact" },
     { label: "Projects", url: "/projects"},
     { label: "React Demo", url: "/reactdemo"},
   ];

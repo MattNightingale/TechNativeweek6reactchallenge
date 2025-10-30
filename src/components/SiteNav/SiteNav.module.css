@@ -1,6 +1,6 @@
 .wrapper {
   padding: 1rem;
-  border: 1px solid lightgray;
+  border-bottom: 1px solid rgb(94, 81, 231);;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,6 +9,7 @@
 
 .links {
   display: flex;
+  font-weight: bold;
 }
 
 .activeLink,

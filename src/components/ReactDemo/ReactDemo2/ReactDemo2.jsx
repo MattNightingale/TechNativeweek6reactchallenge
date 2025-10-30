@@ -27,7 +27,7 @@ function ReactDemo2() {
   async function tenDrinksArray() {
     let drinksArray = [];
 
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 9; i++) {
       drinksArray.push(await cocktailDB.randomDrink([i]));
     }
     return drinksArray;

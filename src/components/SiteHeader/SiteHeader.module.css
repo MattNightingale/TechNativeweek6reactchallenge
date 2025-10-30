@@ -12,10 +12,10 @@
 
 .wrapper.light {
   padding: 2rem;
-  border: 1px solid lightgray;
+  border-bottom:  1px solid rgb(94, 81, 231);
   display: flex;
   align-items: center;
   justify-content: center;
   color: black;
-  background: rgb(99, 181, 253);
+  background: rgb(126, 164, 196);
 }

@@ -6,7 +6,7 @@ function SiteHeader() {
   const { darkMode } = useContext(darkModeContext);
   return (
     <div className={darkMode ? styles.wrapper + ' ' + styles.dark : styles.wrapper + ' ' + styles.light}>
-          <h1>SiteHeader</h1>
+          <h1>React Playground</h1>
     </div>
   );
 }
