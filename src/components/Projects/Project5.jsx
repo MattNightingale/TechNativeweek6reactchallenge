@@ -26,7 +26,7 @@ function Project5() {
           href="https://recipe-finder-khaki-zeta.vercel.app/"
         >
           <img
-            src="../src/assets/images/recapi.png"
+            src="/src/assets/images/recapi.png"
             className={styles.project__image}
             alt="recapi"
           />

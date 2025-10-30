@@ -32,7 +32,7 @@ function Project2() {
     </div>
         <a className={styles.project__link} href="https://ask-beatz.vercel.app/">
           <img
-            src="../src/assets/images/askbeatz.png"
+            src="/src/assets/images/askbeatz.png"
             className={styles.project__image}
             alt="ask beatz"
           />

@@ -18,7 +18,7 @@ function Project1() {
         </div>
         <a className={styles.project__link} href="https://adventure-generator-6i8mtqdgp-mattnightingales-projects.vercel.app/">
           <img
-            src="../src/assets/images/adventuregenerator.png"
+            src="/src/assets/images/adventuregenerator.png"
             className={styles.project__image}
             alt="adventure generator"
           />

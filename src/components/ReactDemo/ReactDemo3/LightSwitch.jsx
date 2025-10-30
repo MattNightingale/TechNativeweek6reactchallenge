@@ -11,7 +11,7 @@ function LightSwitch() {
 
   return (
     <div className={styles.switchcontainer}>
-      <img src={darkMode ? `../src/assets/images/switchoff.svg` : `../src/assets/images/switchon.svg`} className={styles.lightswitch} onClick={handleClick}/>
+      <img src={darkMode ? `/src/assets/images/switchoff.svg` : `/src/assets/images/switchon.svg`} className={styles.lightswitch} onClick={handleClick}/>
     </div>
   );
 }
