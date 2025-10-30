@@ -37,17 +37,18 @@ function Projects() {
         >
           useEffect
         </button>
-        <button
-          className={activeTabButton === "button2" ? styles.tab__button + ' ' + styles.active : styles.tab__button}
-          onClick={() => clickHandler("ReactDemo2")}
-        >
-          API demo
-        </button>
+        
         <button
           className={activeTabButton === "button3" ? styles.tab__button + ' ' + styles.active : styles.tab__button}
           onClick={() => clickHandler("ReactDemo3")}
         >
           useContext
+        </button>
+        <button
+          className={activeTabButton === "button2" ? styles.tab__button + ' ' + styles.active : styles.tab__button}
+          onClick={() => clickHandler("ReactDemo2")}
+        >
+          API demo
         </button>
       {/*  <button
           className={activeTabButton === "button4" ? styles.tab__button + ' ' + styles.active : styles.tab__button}
