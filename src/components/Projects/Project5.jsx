@@ -10,13 +10,22 @@ function Project5() {
             A simple, responsive web application that allows users to search for
             recipes using an external recipe API. Built with HTML, CSS, and
             JavaScript, this project demonstrates how to make asynchronous API
-            calls, handle JSON data, and dynamically update the DOM. 🚀 Features
-            🔎 Search recipes by keyword (e.g., "chicken", "pasta", "vegan"). 📜
+            calls, handle JSON data, and dynamically update the DOM. 
+            </p>
+            Features
+             Search recipes by keyword (e.g., "chicken", "pasta", "vegan"). 
             View detailed recipe information such as ingredients and
-            instructions. 🖼️ Display recipe images and relevant metadata (e.g.,
-            servings, cooking time). ⚡ Fetch data asynchronously using the
-            Fetch API. 💅 Responsive design for both desktop and mobile users.
-            🧠 Tech Stack Frontend: HTML5, CSS3, JavaScript (Vanilla) API: [Your
+            instructions. 
+            <p>
+            Display recipe images and relevant metadata (e.g.,
+            servings, cooking time). 
+            </p>
+            <p>
+             Fetch data asynchronously using the Fetch API. 
+            </p>
+             Responsive design for both desktop and mobile users.
+            <p>
+             Tech Stack Frontend: HTML5, CSS3, JavaScript (Vanilla) API: [Your
             Recipe API Provider] (e.g., Spoonacular API or TheMealDB ) Tools: VS
             Code, Live Server (for local development)
           </p>
