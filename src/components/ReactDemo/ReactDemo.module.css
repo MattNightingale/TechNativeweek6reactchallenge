@@ -28,6 +28,18 @@
   margin-bottom: 20px;
 }
 
+.searchinput {
+  height: 30px;
+  border: 2px solid rgb(62, 158, 255);
+  border-radius: 5px;
+}
+
+.searchbutton {
+  height: 30px;
+  border: 2px solid rgb(62, 158, 255);
+  border-radius: 5px;
+}
+
 .demo__header {
   width: 80%;
   text-align: center;

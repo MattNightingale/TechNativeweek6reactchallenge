@@ -17,4 +17,5 @@
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
+  box-shadow: 5px 5px 5px rgb(54, 54, 54);
 }

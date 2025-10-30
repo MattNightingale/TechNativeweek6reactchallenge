@@ -39,9 +39,9 @@ function SearchBar(props) {
         required
         value={term}
         id="input"
-        className={styles.searchInput}
+        className={styles.searchinput}
       />
-      <button id='button' type="button" className={styles.searchButton} onClick={newSearch} >
+      <button id='button' type="button" className={styles.searchbutton} onClick={newSearch} >
         SEARCH
       </button>
     </div>
