@@ -45,7 +45,7 @@ function ReactDemo2() {
   if (loading) {
     return (
       <div className={styles.wrapper}>
-        <h3 className={styles.demo__header}>Displaying API data with React</h3>
+        <h3 className={styles.demo__header}>Displaying and filtering API data with React</h3>
         <SearchBar onSearch={search} />
         <Loading />
       </div>
@@ -54,7 +54,7 @@ function ReactDemo2() {
   if (searchResults.length > 0) {
     return (
       <div className={styles.wrapper}>
-        <h3 className={styles.demo__header}>Displaying API data with React</h3>
+        <h3 className={styles.demo__header}>Displaying and filtering API data with React</h3>
         <SearchBar onSearch={search} />
         <SearchResults searchResults={searchResults} />
       </div>
@@ -64,7 +64,7 @@ function ReactDemo2() {
   else {
     return (
       <div className={styles.wrapper}>
-        <h3 className={styles.demo__header}>Displaying API data with React</h3>
+        <h3 className={styles.demo__header}>Displaying and filtering API data with React</h3>
         <SearchBar onSearch={search} />
         <Drinks drinks={drinks} />
       </div>
