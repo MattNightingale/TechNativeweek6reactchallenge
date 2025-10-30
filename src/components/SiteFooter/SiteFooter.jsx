@@ -6,7 +6,7 @@ function SiteFooter() {
   const { darkMode } = useContext(darkModeContext);
   return (
     <div className={darkMode ? styles.wrapper + ' ' + styles.dark : styles.wrapper + ' ' + styles.light}>
-      SiteFooter
+      &copy; Matt Nightingale 2025
     </div>
   );
 }
