@@ -13,10 +13,10 @@ function Projects() {
 
   function clickHandler(event) {
     if (event === "Project1") {
-      setProject(<Project1 />);
+      setProject(<Project2/>);
       setActiveTabButton("button1")
     } else if (event === "Project2") {
-      setProject(<Project2 />);
+      setProject(<Project4 />);
       setActiveTabButton("button2");
      
     } else if (event === "Project3") {
@@ -24,7 +24,7 @@ function Projects() {
       setActiveTabButton("button3");
       
     } else if (event === "Project4") {
-      setProject(<Project4 />);
+      setProject(<Project1 />);
       setActiveTabButton("button4");
      
     } else if (event === "Project5") {
@@ -41,13 +41,13 @@ function Projects() {
           onClick={() => clickHandler("Project1")}
           id="button1"
         >
-          Adventure Generator
+          Ask Beatz
         </button>
         <button
           className={activeTabButton === "button2" ? styles.tab__button + ' ' + styles.active : styles.tab__button}
           onClick={() => clickHandler("Project2")}
         >
-          Ask Beatz
+          Jammmin'
         </button>
         <button
           className={activeTabButton === "button3" ? styles.tab__button + ' ' + styles.active : styles.tab__button}
@@ -59,7 +59,7 @@ function Projects() {
           className={activeTabButton === "button4" ? styles.tab__button + ' ' + styles.active : styles.tab__button}
           onClick={() => clickHandler("Project4")}
         >
-          Jammmin'
+          Adventure Generator
         </button>
         <button
           className={activeTabButton === "button5" ? styles.tab__button + ' ' + styles.active : styles.tab__button}
