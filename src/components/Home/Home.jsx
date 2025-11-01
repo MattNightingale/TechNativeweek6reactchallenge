@@ -17,7 +17,7 @@ function Home() {
           <li>State</li>
           <li>Context API</li>
           <li>Hooks (useState, useContext, useEffect)</li>
-          <li>Hopefully some Redux toolkit if I pull my finger out!</li>
+          <li>Redux toolkit state management</li>
         </ul>
       </div>
     </div>
