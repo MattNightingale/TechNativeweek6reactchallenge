@@ -25,7 +25,7 @@ function SearchBar(props) {
   function newSearch(e) {
     if (term) {
       props.onSearch(term);
-      e.preventDefault();
+      e.preventDefault(e);
     }
   };
 

@@ -114,16 +114,31 @@
 .image {
   width: 80%;
   border-radius: 10px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
-.favorite {
-  width: 30px;
-  position: relative;
+.favouritebutton {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
   top: 0px;
   left: 125px;
+  justify-self: flex-end;
+}
+
+.favourite {
+  width: 30px;
   filter: grayscale(100%);
-  cursor: pointer;
+}
+
+.favourite.active {
+  filter: none;
+}
+
+.favourite:hover {
+  transform: scale(1.1);
 }
 
 .lightswitch {
