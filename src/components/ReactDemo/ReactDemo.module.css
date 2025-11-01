@@ -45,6 +45,12 @@
   text-align: center;
 }
 
+.demo__subheader {
+  width: 80%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .loader {
   width: 60px;
   aspect-ratio: 4;

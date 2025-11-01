@@ -54,7 +54,7 @@ function Projects() {
           className={activeTabButton === "button4" ? styles.tab__button + ' ' + styles.active : styles.tab__button}
           onClick={() => clickHandler("ReactDemo4")}
         >
-          ReactDemo 4
+          Redux store
         </button>
         {/*  <button
           className={activeTabButton === "button5" ? styles.tab__button + ' ' + styles.active : styles.tab__button}

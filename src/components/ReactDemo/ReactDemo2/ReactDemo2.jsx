@@ -46,6 +46,7 @@ function ReactDemo2() {
     return (
       <div className={styles.wrapper}>
         <h3 className={styles.demo__header}>Displaying and filtering API data with React</h3>
+        <h4 className={styles.demo__subheader}>You can choose your favourite drinks and view them on the next tab!</h4>
         <SearchBar onSearch={search} />
         <Loading />
       </div>
@@ -55,6 +56,7 @@ function ReactDemo2() {
     return (
       <div className={styles.wrapper}>
         <h3 className={styles.demo__header}>Displaying and filtering API data with React</h3>
+            <h4 className={styles.demo__subheader}>You can choose your favourite drinks and view them on the next tab!</h4>
         <SearchBar onSearch={search} />
         <SearchResults searchResults={searchResults} />
       </div>
@@ -65,6 +67,7 @@ function ReactDemo2() {
     return (
       <div className={styles.wrapper}>
         <h3 className={styles.demo__header}>Displaying and filtering API data with React</h3>
+            <h4 className={styles.demo__subheader}>You can choose your favourite drinks and view them on the next tab!</h4>
         <SearchBar onSearch={search} />
         <Drinks drinks={drinks} />
       </div>
