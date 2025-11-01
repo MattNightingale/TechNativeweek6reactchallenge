@@ -6,6 +6,7 @@
   justify-content: center;
   color: white;
   background: darkslategray;
+  bottom: 0;
 }
 
 .wrapper.light {
@@ -16,4 +17,5 @@
   justify-content: center;
   color: black;
   background: rgb(126, 164, 196);
+  bottom: 0;
 }
